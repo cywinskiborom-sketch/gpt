@@ -1,0 +1,50 @@
+# 点云文献筛选与阅读材料
+
+这份材料来自 745 条 TGRS / TPAMI 题录，依据题名、作者关键词和摘要进行初筛，未逐篇阅读全文。推荐项核对了摘要；模态不明确的条目保留为待核验。
+
+## 下载后先打开哪个文件
+
+| 文件 | 用途 |
+|---|---|
+| [point_cloud_screening.xlsx](point_cloud_screening.xlsx) | 推荐先打开。包含统计说明、29篇阅读顺序、近两年直接相关池、745条全量初筛、原始题录及粗读笔记模板 |
+| [point_cloud_screening.csv](point_cloud_screening.csv) | 保留原始字段并加入相关性、任务、理由和日期标记，便于导入其他软件 |
+| [point_cloud_review.md](point_cloud_review.md) | 筛选依据、对原AI回复的修正、常规流程与阅读建议，可直接在GitHub阅读 |
+
+Excel 中先看“说明与统计”和“阅读顺序与重点”，第一轮安排8篇；随后按任务进入“近两年直接相关”。“全量初筛745”可以按相关性、日期与任务过滤。
+
+## 结果与日期口径
+
+- 原始记录：745条；TGRS 412、TPAMI 333；出版年覆盖2024–2026。
+- 全量初筛：直接相关354、邻近相关274、当前排除101、待核验16。
+- 以CSV的Online Date为准，暂按导出日前24个月：2024-10-10至2026-10-09，共492条，其中直接相关225条。
+- 若按出版年2025–2026统计，则原始候选为487条，两种日期口径不能混用。
+- 任务标签可多选，数量不能相加。直接相关包含少量影像/传感器数据生成点云的研究；它们与扫描点云输入的方法具有不同流程。
+- 相关性判断和阅读优先级可在全文阅读后修改；本文件不能证明检索完整或代表全领域热度。
+
+## GitHub怎么用
+
+GitHub仓库保存文件和修改历史。阅读成果可以直接在仓库网页下载：
+
+1. 返回[仓库首页](https://github.com/cywinskiborom-sketch/gpt)，点击绿色 **Code → Download ZIP**。
+2. 解压后进入 `point-cloud-literature`，用Excel打开 `point_cloud_screening.xlsx`。
+3. 也可以点开单个文件，再点击下载原始文件的按钮。
+4. Markdown说明可以直接在GitHub网页阅读。
+
+[GitHub官方下载说明](https://docs.github.com/zh/repositories/working-with-files/using-files/downloading-files-from-github)
+
+## Codespaces怎么用
+
+Codespaces是一台在线运行代码的云电脑，会克隆仓库；本次上传通过ChatGPT已授权的GitHub连接完成。连接GitHub、打开Codespaces、当前聊天的执行环境是不同的连接关系。
+
+1. 在仓库首页选择 `main`，点击 **Code → Codespaces**。打开已有环境，或创建一个codespace。
+2. 左侧文件栏可查看仓库文件；终端可运行代码。阅读Excel可以先下载到本地。
+3. 修改仓库文件后，在编辑器的Source Control（源代码管理）中检查变更，填写说明并 **Commit（提交）**，再 **Push（推送）** 到GitHub；仓库保存的是已经推送的版本。
+4. 用完打开[Codespaces列表](https://github.com/codespaces)，在对应环境右侧点 **… → Stop codespace**。仅关闭浏览器标签页不会立即停止运行。停止后仍保留环境和存储；计算及存储额度以账号页面为准。
+
+[创建Codespace](https://docs.github.com/zh/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository?tool=webui) · [官方入门](https://docs.github.com/zh/codespaces/quickstart) · [停止与启动](https://docs.github.com/zh/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace?tool=webui)
+
+## 后续读论文怎么记
+
+每篇记录：输入→输出；具体瓶颈；完整流程及相对基线改动；监督与数据划分；指标、基线和消融；计算代价、适用条件与失败情形。
+
+建议给导师的成果：任务地图，建模和语义分割各一张流程图，以及每个主要任务2–3篇近期代表作对照。
