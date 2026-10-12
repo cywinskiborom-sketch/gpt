@@ -58,3 +58,7 @@ Codespaces是一台在线运行代码的云电脑，会克隆仓库；本次上�
 已提供 *Surface Reconstruction From Point Clouds: A Survey and a Benchmark* 的中文译稿 PDF 与独立粗读导读，保留原图表及公式，并按原文页码导航。
 
 [打开译稿与导读文件夹](surface-reconstruction/README.md)。建议先看 7 页导读，再按需查阅 36 页译稿。
+
+## 2024–2026 点云建模典型论文
+
+[打开六刊建模阅读册](modeling-2024-2026/README.md)：12篇论文，19页PDF，包含中文摘要、出处、常规流程、方法、效果证据与粗读重点。7篇完整摘要中译、5篇中文摘要要点，分别标注来源；2026在线优先论文单列状态。
